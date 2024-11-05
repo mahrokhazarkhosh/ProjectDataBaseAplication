@@ -41,4 +41,21 @@ sb1.grid(row=2, column=5, rowspan=20, columnspan=6)
 list1.configure(yscrollcommand=sb1.set)
 sb1.configure(command=list1.yview)
 
+b1 = Button(window, text="View All",width=15,bg="#B4CDED")
+b1.grid(row=2, column=50, columnspan=20)
+
+b2 = Button(window, text="Search Entry",width=15,bg="#B4CDED")
+b2.grid(row=4, column=50, columnspan=20)
+
+b3 = Button(window, text=" Add Entry",width=15,bg="#B4CDED")
+b3.grid(row=6, column=50, columnspan=20)
+
+b4 = Button(window, text="Update Selection",width=15,bg="#B4CDED")
+b4.grid(row=8, column=50, columnspan=20)
+
+b5 = Button(window, text="Delete Selection",width=15,bg="#B4CDED")
+b5.grid(row=10, column=50, columnspan=20)
+
+b6 = Button(window, text="close",width=15,bg="#B4CDED")
+b6.grid(row=12, column=50, columnspan=20)
 window.mainloop()
