@@ -34,4 +34,11 @@ isbn_text = StringVar()
 e1 = Entry(window, textvariable=isbn_text)
 e1.grid(row=1, column=3)
 
+list1 =Listbox(window, height=18, width=50,bg="#BFCC94",fg="black")
+list1.grid(row=2, column=1, rowspan=12, columnspan=3)
+sb1 = Scrollbar(window)
+sb1.grid(row=2, column=5, rowspan=20, columnspan=6)
+list1.configure(yscrollcommand=sb1.set)
+sb1.configure(command=list1.yview)
+
 window.mainloop()
